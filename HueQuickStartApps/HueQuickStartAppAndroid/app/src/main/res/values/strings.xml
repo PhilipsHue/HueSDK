@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">HueQuickStartApp</string>
+    <string name="title_activity_bridge_discovery">BridgeDiscoveryActivity</string>
+</resources>

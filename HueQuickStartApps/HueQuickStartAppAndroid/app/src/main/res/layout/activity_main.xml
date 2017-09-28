@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.philips.lighting.hue.demo.huequickstartapp.MainActivity"
+    android:padding="16dp"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:paddingBottom="8dp"
+        tools:text="Press the link button to authenticate."/>
+
+    <TextView
+        android:id="@+id/bridge_ip_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:text=" Bridge IP:192.168.1.1:600026"
+        android:paddingBottom="16dp"/>
+
+    <ImageView
+        android:id="@+id/pushlink_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:visibility="visible"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/pushlink_image"/>
+
+    <ListView
+        android:id="@+id/bridge_discovery_result_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/randomize_lights_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Randomize lights"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/bridge_discovery_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Re-run bridge discovery" />
+
+</LinearLayout>

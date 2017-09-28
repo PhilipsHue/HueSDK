@@ -1,0 +1,783 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B2D16EC1F1F584C0012283C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B2D16EB1F1F584C0012283C /* Default-568h@2x.png */; };
+		8B566B791F1F9263000FA1E3 /* HueSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAD13B71F0E342600E75FE6 /* HueSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8B566B7D1F1FD2DD000FA1E3 /* PHSKnownBridges+LastConnectedBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B566B7C1F1FD2DD000FA1E3 /* PHSKnownBridges+LastConnectedBridge.m */; };
+		8B566B801F1FD86D000FA1E3 /* PHBridgeInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B566B7F1F1FD86D000FA1E3 /* PHBridgeInfo.m */; };
+		8B566B841F210B3B000FA1E3 /* PHRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B566B821F210B3B000FA1E3 /* PHRootViewController.m */; };
+		8B566B851F210B3B000FA1E3 /* PHRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B566B831F210B3B000FA1E3 /* PHRootViewController.xib */; };
+		8B769FFC1F1CDC6E007C8FF0 /* PHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAD13771F0E29A200E75FE6 /* PHAppDelegate.m */; };
+		8B76A0201F1CDD71007C8FF0 /* PHLightControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B76A01E1F1CDD71007C8FF0 /* PHLightControlViewController.m */; };
+		8B76A0211F1CDD71007C8FF0 /* PHLightControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B76A01F1F1CDD71007C8FF0 /* PHLightControlViewController.xib */; };
+		8B76A0511F1F5211007C8FF0 /* PHBridgeDiscoveryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B76A0481F1F5211007C8FF0 /* PHBridgeDiscoveryController.m */; };
+		8B76A0521F1F5211007C8FF0 /* PHBridgeSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B76A04A1F1F5211007C8FF0 /* PHBridgeSelectionViewController.m */; };
+		8B76A0531F1F5211007C8FF0 /* PHBridgeSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B76A04B1F1F5211007C8FF0 /* PHBridgeSelectionViewController.xib */; };
+		8B76A0541F1F5211007C8FF0 /* PHBridgeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B76A04D1F1F5211007C8FF0 /* PHBridgeController.m */; };
+		8B76A0551F1F5211007C8FF0 /* PHBridgePushLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B76A04F1F1F5211007C8FF0 /* PHBridgePushLinkViewController.m */; };
+		8B76A0561F1F5211007C8FF0 /* PHBridgePushLinkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B76A0501F1F5211007C8FF0 /* PHBridgePushLinkViewController.xib */; };
+		8B76A05A1F1F522D007C8FF0 /* press_smartbridge.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B76A0581F1F522D007C8FF0 /* press_smartbridge.png */; };
+		8B76A05B1F1F522D007C8FF0 /* press_smartbridge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B76A0591F1F522D007C8FF0 /* press_smartbridge@2x.png */; };
+		8BAD13751F0E29A200E75FE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAD13741F0E29A200E75FE6 /* main.m */; };
+		8BAD13B81F0E342600E75FE6 /* HueSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAD13B71F0E342600E75FE6 /* HueSDK.framework */; };
+		A91B5E731F422A610004AD77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A91B5E721F422A610004AD77 /* Assets.xcassets */; };
+		A91B5E761F422A610004AD77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91B5E741F422A610004AD77 /* LaunchScreen.storyboard */; };
+		A91B5E8B1F422ACE0004AD77 /* HueSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAD13B71F0E342600E75FE6 /* HueSDK.framework */; };
+		A91B5E8C1F422AEC0004AD77 /* PHBridgeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91B5E851F422A960004AD77 /* PHBridgeController.swift */; };
+		A91B5E931F4234AB0004AD77 /* PHAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91B5E911F422C670004AD77 /* PHAppDelegate.swift */; };
+		A92A555D1F57630C006A17F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9831B951F4E14EA000913E4 /* Main.storyboard */; };
+		A92A555E1F576312006A17F2 /* PHLightControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91B5E7D1F422A950004AD77 /* PHLightControlViewController.swift */; };
+		A9506B191F50FADB00DD3E39 /* NavigationHelping.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9506B181F50FADB00DD3E39 /* NavigationHelping.swift */; };
+		A9506B1B1F50FBC600DD3E39 /* NavigableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9506B1A1F50FBC600DD3E39 /* NavigableController.swift */; };
+		A968FE111F56151F0028D65F /* PHBridgePushLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A968FE101F56151F0028D65F /* PHBridgePushLinkViewController.swift */; };
+		A968FE121F562D4E0028D65F /* press_smartbridge.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B76A0581F1F522D007C8FF0 /* press_smartbridge.png */; };
+		A968FE131F562D520028D65F /* press_smartbridge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B76A0591F1F522D007C8FF0 /* press_smartbridge@2x.png */; };
+		A97921321F51B758003463C5 /* PHBridgeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97921311F51B758003463C5 /* PHBridgeSelectionViewController.swift */; };
+		A9831B991F4E1774000913E4 /* ActivityDisplaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9831B981F4E1774000913E4 /* ActivityDisplaying.swift */; };
+		A9831B9B1F4E17F5000913E4 /* ActivityStatusIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9831B9A1F4E17F5000913E4 /* ActivityStatusIndicator.swift */; };
+		A9831B9D1F4E18CD000913E4 /* ActivityIndicatorOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9831B9C1F4E18CD000913E4 /* ActivityIndicatorOverlayView.swift */; };
+		A9831BA01F4E1947000913E4 /* ActivityIndicatorOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9831B9F1F4E1947000913E4 /* ActivityIndicatorOverlayView.xib */; };
+		A9831BA31F4E1A36000913E4 /* AutomaticNibLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9831BA21F4E1A36000913E4 /* AutomaticNibLoading.swift */; };
+		A9A1A3D31F589EBE00B6AB16 /* PHSKnownBridgeAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A1A3D21F589EBE00B6AB16 /* PHSKnownBridgeAdditions.swift */; };
+		A9C03A531F423C6A00F8CEAF /* HueSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAD13B71F0E342600E75FE6 /* HueSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A9CD0EAD1F50D4B500E8CE93 /* PushLinkPresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CD0EAC1F50D4B500E8CE93 /* PushLinkPresenting.swift */; };
+		A9CD0EAF1F50D54500E8CE93 /* AlertPresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CD0EAE1F50D54500E8CE93 /* AlertPresenting.swift */; };
+		A9D4D40A1F50E3E2000EEB9C /* PHNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D4D4091F50E3E2000EEB9C /* PHNavigationController.swift */; };
+		A9EAF1F31F54C0FB00E04C55 /* SegueCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EAF1F21F54C0FB00E04C55 /* SegueCoordinator.swift */; };
+		A9FFBF801F4E3F7D007BB5EB /* BridgeDiscoveryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FFBF7F1F4E3F7D007BB5EB /* BridgeDiscoveryController.swift */; };
+		A9FFBF811F4E42ED007BB5EB /* PHBridgeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91B5E861F422A960004AD77 /* PHBridgeInfo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8BAD13B51F0E2BFE00E75FE6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8B566B791F1F9263000FA1E3 /* HueSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9C03A541F423C6B00F8CEAF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A9C03A531F423C6A00F8CEAF /* HueSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8B2D16EB1F1F584C0012283C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8B566B7B1F1FD2DD000FA1E3 /* PHSKnownBridges+LastConnectedBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PHSKnownBridges+LastConnectedBridge.h"; path = "SDK/PHSKnownBridges+LastConnectedBridge.h"; sourceTree = "<group>"; };
+		8B566B7C1F1FD2DD000FA1E3 /* PHSKnownBridges+LastConnectedBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "PHSKnownBridges+LastConnectedBridge.m"; path = "SDK/PHSKnownBridges+LastConnectedBridge.m"; sourceTree = "<group>"; };
+		8B566B7E1F1FD86D000FA1E3 /* PHBridgeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHBridgeInfo.h; sourceTree = "<group>"; };
+		8B566B7F1F1FD86D000FA1E3 /* PHBridgeInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHBridgeInfo.m; sourceTree = "<group>"; };
+		8B566B811F210B3B000FA1E3 /* PHRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHRootViewController.h; sourceTree = "<group>"; };
+		8B566B821F210B3B000FA1E3 /* PHRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHRootViewController.m; sourceTree = "<group>"; };
+		8B566B831F210B3B000FA1E3 /* PHRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHRootViewController.xib; sourceTree = "<group>"; };
+		8B76A01D1F1CDD71007C8FF0 /* PHLightControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHLightControlViewController.h; sourceTree = "<group>"; };
+		8B76A01E1F1CDD71007C8FF0 /* PHLightControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHLightControlViewController.m; sourceTree = "<group>"; };
+		8B76A01F1F1CDD71007C8FF0 /* PHLightControlViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHLightControlViewController.xib; sourceTree = "<group>"; };
+		8B76A0471F1F5211007C8FF0 /* PHBridgeDiscoveryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHBridgeDiscoveryController.h; sourceTree = "<group>"; };
+		8B76A0481F1F5211007C8FF0 /* PHBridgeDiscoveryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHBridgeDiscoveryController.m; sourceTree = "<group>"; };
+		8B76A0491F1F5211007C8FF0 /* PHBridgeSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHBridgeSelectionViewController.h; sourceTree = "<group>"; };
+		8B76A04A1F1F5211007C8FF0 /* PHBridgeSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHBridgeSelectionViewController.m; sourceTree = "<group>"; };
+		8B76A04B1F1F5211007C8FF0 /* PHBridgeSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHBridgeSelectionViewController.xib; sourceTree = "<group>"; };
+		8B76A04C1F1F5211007C8FF0 /* PHBridgeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHBridgeController.h; sourceTree = "<group>"; };
+		8B76A04D1F1F5211007C8FF0 /* PHBridgeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHBridgeController.m; sourceTree = "<group>"; };
+		8B76A04E1F1F5211007C8FF0 /* PHBridgePushLinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHBridgePushLinkViewController.h; sourceTree = "<group>"; };
+		8B76A04F1F1F5211007C8FF0 /* PHBridgePushLinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHBridgePushLinkViewController.m; sourceTree = "<group>"; };
+		8B76A0501F1F5211007C8FF0 /* PHBridgePushLinkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHBridgePushLinkViewController.xib; sourceTree = "<group>"; };
+		8B76A0581F1F522D007C8FF0 /* press_smartbridge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = press_smartbridge.png; sourceTree = "<group>"; };
+		8B76A0591F1F522D007C8FF0 /* press_smartbridge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "press_smartbridge@2x.png"; sourceTree = "<group>"; };
+		8BAD13701F0E29A200E75FE6 /* HueQuickStartApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HueQuickStartApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BAD13741F0E29A200E75FE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8BAD13761F0E29A200E75FE6 /* PHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHAppDelegate.h; sourceTree = "<group>"; };
+		8BAD13771F0E29A200E75FE6 /* PHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHAppDelegate.m; sourceTree = "<group>"; };
+		8BAD13841F0E29A200E75FE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BAD13B71F0E342600E75FE6 /* HueSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HueSDK.framework; path = Dependencies/HueSDK/phone/active/HueSDK.framework; sourceTree = "<group>"; };
+		A91B5E691F422A610004AD77 /* HueQuickStartAppSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HueQuickStartAppSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A91B5E721F422A610004AD77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A91B5E751F422A610004AD77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A91B5E771F422A610004AD77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A91B5E7B1F422A950004AD77 /* HueQuickStartAppSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HueQuickStartAppSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		A91B5E7D1F422A950004AD77 /* PHLightControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHLightControlViewController.swift; sourceTree = "<group>"; };
+		A91B5E851F422A960004AD77 /* PHBridgeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHBridgeController.swift; sourceTree = "<group>"; };
+		A91B5E861F422A960004AD77 /* PHBridgeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHBridgeInfo.swift; sourceTree = "<group>"; };
+		A91B5E911F422C670004AD77 /* PHAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHAppDelegate.swift; sourceTree = "<group>"; };
+		A9506B181F50FADB00DD3E39 /* NavigationHelping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelping.swift; sourceTree = "<group>"; };
+		A9506B1A1F50FBC600DD3E39 /* NavigableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigableController.swift; sourceTree = "<group>"; };
+		A968FE101F56151F0028D65F /* PHBridgePushLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHBridgePushLinkViewController.swift; sourceTree = "<group>"; };
+		A97921311F51B758003463C5 /* PHBridgeSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHBridgeSelectionViewController.swift; sourceTree = "<group>"; };
+		A9831B951F4E14EA000913E4 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A9831B981F4E1774000913E4 /* ActivityDisplaying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDisplaying.swift; sourceTree = "<group>"; };
+		A9831B9A1F4E17F5000913E4 /* ActivityStatusIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityStatusIndicator.swift; sourceTree = "<group>"; };
+		A9831B9C1F4E18CD000913E4 /* ActivityIndicatorOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorOverlayView.swift; sourceTree = "<group>"; };
+		A9831B9F1F4E1947000913E4 /* ActivityIndicatorOverlayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityIndicatorOverlayView.xib; sourceTree = "<group>"; };
+		A9831BA21F4E1A36000913E4 /* AutomaticNibLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomaticNibLoading.swift; sourceTree = "<group>"; };
+		A9A1A3D21F589EBE00B6AB16 /* PHSKnownBridgeAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHSKnownBridgeAdditions.swift; sourceTree = "<group>"; };
+		A9CD0EAC1F50D4B500E8CE93 /* PushLinkPresenting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushLinkPresenting.swift; sourceTree = "<group>"; };
+		A9CD0EAE1F50D54500E8CE93 /* AlertPresenting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenting.swift; sourceTree = "<group>"; };
+		A9D4D4091F50E3E2000EEB9C /* PHNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHNavigationController.swift; sourceTree = "<group>"; };
+		A9EAF1F21F54C0FB00E04C55 /* SegueCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueCoordinator.swift; sourceTree = "<group>"; };
+		A9FFBF7F1F4E3F7D007BB5EB /* BridgeDiscoveryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeDiscoveryController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BAD136D1F0E29A200E75FE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BAD13B81F0E342600E75FE6 /* HueSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A91B5E661F422A610004AD77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A91B5E8B1F422ACE0004AD77 /* HueSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B2D16EA1F1F584C0012283C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8B2D16EB1F1F584C0012283C /* Default-568h@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8B566B701F1F831A000FA1E3 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				8B566B7A1F1FD2BB000FA1E3 /* SDK */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		8B566B7A1F1FD2BB000FA1E3 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				8B566B7B1F1FD2DD000FA1E3 /* PHSKnownBridges+LastConnectedBridge.h */,
+				8B566B7C1F1FD2DD000FA1E3 /* PHSKnownBridges+LastConnectedBridge.m */,
+			);
+			name = SDK;
+			sourceTree = "<group>";
+		};
+		8B76A0451F1F5211007C8FF0 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				8B76A0461F1F5211007C8FF0 /* Discovery */,
+				8B76A04C1F1F5211007C8FF0 /* PHBridgeController.h */,
+				8B76A04D1F1F5211007C8FF0 /* PHBridgeController.m */,
+				8B566B7E1F1FD86D000FA1E3 /* PHBridgeInfo.h */,
+				8B566B7F1F1FD86D000FA1E3 /* PHBridgeInfo.m */,
+				8B76A04E1F1F5211007C8FF0 /* PHBridgePushLinkViewController.h */,
+				8B76A04F1F1F5211007C8FF0 /* PHBridgePushLinkViewController.m */,
+				8B76A0501F1F5211007C8FF0 /* PHBridgePushLinkViewController.xib */,
+				8B76A0571F1F522D007C8FF0 /* Resources */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+		8B76A0461F1F5211007C8FF0 /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				8B76A0471F1F5211007C8FF0 /* PHBridgeDiscoveryController.h */,
+				8B76A0481F1F5211007C8FF0 /* PHBridgeDiscoveryController.m */,
+				8B76A0491F1F5211007C8FF0 /* PHBridgeSelectionViewController.h */,
+				8B76A04A1F1F5211007C8FF0 /* PHBridgeSelectionViewController.m */,
+				8B76A04B1F1F5211007C8FF0 /* PHBridgeSelectionViewController.xib */,
+			);
+			path = Discovery;
+			sourceTree = "<group>";
+		};
+		8B76A0571F1F522D007C8FF0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8B76A0581F1F522D007C8FF0 /* press_smartbridge.png */,
+				8B76A0591F1F522D007C8FF0 /* press_smartbridge@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8BAD13671F0E29A200E75FE6 = {
+			isa = PBXGroup;
+			children = (
+				8BAD13B61F0E340A00E75FE6 /* Dependencies */,
+				8BAD13721F0E29A200E75FE6 /* HueQuickStartApp */,
+				A91B5E6A1F422A610004AD77 /* HueQuickStartAppSwift */,
+				8BAD13711F0E29A200E75FE6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8BAD13711F0E29A200E75FE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BAD13701F0E29A200E75FE6 /* HueQuickStartApp.app */,
+				A91B5E691F422A610004AD77 /* HueQuickStartAppSwift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BAD13721F0E29A200E75FE6 /* HueQuickStartApp */ = {
+			isa = PBXGroup;
+			children = (
+				8B76A0451F1F5211007C8FF0 /* Bridge */,
+				8B566B701F1F831A000FA1E3 /* Misc */,
+				8BAD13761F0E29A200E75FE6 /* PHAppDelegate.h */,
+				8BAD13771F0E29A200E75FE6 /* PHAppDelegate.m */,
+				8B566B811F210B3B000FA1E3 /* PHRootViewController.h */,
+				8B566B821F210B3B000FA1E3 /* PHRootViewController.m */,
+				8B566B831F210B3B000FA1E3 /* PHRootViewController.xib */,
+				8B76A01D1F1CDD71007C8FF0 /* PHLightControlViewController.h */,
+				8B76A01E1F1CDD71007C8FF0 /* PHLightControlViewController.m */,
+				8B76A01F1F1CDD71007C8FF0 /* PHLightControlViewController.xib */,
+				8BAD13841F0E29A200E75FE6 /* Info.plist */,
+				8B2D16EA1F1F584C0012283C /* Resources */,
+				8BAD13731F0E29A200E75FE6 /* Supporting Files */,
+			);
+			path = HueQuickStartApp;
+			sourceTree = "<group>";
+		};
+		8BAD13731F0E29A200E75FE6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BAD13741F0E29A200E75FE6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8BAD13B61F0E340A00E75FE6 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				8BAD13B71F0E342600E75FE6 /* HueSDK.framework */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		A91B5E6A1F422A610004AD77 /* HueQuickStartAppSwift */ = {
+			isa = PBXGroup;
+			children = (
+				A9831BA11F4E19B9000913E4 /* Utils */,
+				A9831B9E1F4E191A000913E4 /* Views */,
+				A9831B971F4E16F0000913E4 /* Protocols */,
+				A91B5E841F422A960004AD77 /* Bridge */,
+				A9EAF1F11F54B83F00E04C55 /* Coordinators */,
+				A9A1A3D11F589E7B00B6AB16 /* Misc */,
+				A91B5E911F422C670004AD77 /* PHAppDelegate.swift */,
+				A9D4D4091F50E3E2000EEB9C /* PHNavigationController.swift */,
+				A91B5E7D1F422A950004AD77 /* PHLightControlViewController.swift */,
+				A9831B951F4E14EA000913E4 /* Main.storyboard */,
+				A91B5E741F422A610004AD77 /* LaunchScreen.storyboard */,
+				A91B5E721F422A610004AD77 /* Assets.xcassets */,
+				A91B5E771F422A610004AD77 /* Info.plist */,
+				A91B5E7B1F422A950004AD77 /* HueQuickStartAppSwift-Bridging-Header.h */,
+			);
+			path = HueQuickStartAppSwift;
+			sourceTree = "<group>";
+		};
+		A91B5E841F422A960004AD77 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				A9FFBF7E1F4E3F5D007BB5EB /* Discovery */,
+				A91B5E851F422A960004AD77 /* PHBridgeController.swift */,
+				A91B5E861F422A960004AD77 /* PHBridgeInfo.swift */,
+				A968FE101F56151F0028D65F /* PHBridgePushLinkViewController.swift */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+		A9831B971F4E16F0000913E4 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A9CD0EAE1F50D54500E8CE93 /* AlertPresenting.swift */,
+				A9831B981F4E1774000913E4 /* ActivityDisplaying.swift */,
+				A9506B181F50FADB00DD3E39 /* NavigationHelping.swift */,
+				A9506B1A1F50FBC600DD3E39 /* NavigableController.swift */,
+				A9CD0EAC1F50D4B500E8CE93 /* PushLinkPresenting.swift */,
+				A9831B9A1F4E17F5000913E4 /* ActivityStatusIndicator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A9831B9E1F4E191A000913E4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A9831B9C1F4E18CD000913E4 /* ActivityIndicatorOverlayView.swift */,
+				A9831B9F1F4E1947000913E4 /* ActivityIndicatorOverlayView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A9831BA11F4E19B9000913E4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A9831BA21F4E1A36000913E4 /* AutomaticNibLoading.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A9A1A3D11F589E7B00B6AB16 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				A9A1A3D21F589EBE00B6AB16 /* PHSKnownBridgeAdditions.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		A9EAF1F11F54B83F00E04C55 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				A9EAF1F21F54C0FB00E04C55 /* SegueCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		A9FFBF7E1F4E3F5D007BB5EB /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				A9FFBF7F1F4E3F7D007BB5EB /* BridgeDiscoveryController.swift */,
+				A97921311F51B758003463C5 /* PHBridgeSelectionViewController.swift */,
+			);
+			path = Discovery;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BAD136F1F0E29A200E75FE6 /* HueQuickStartApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BAD13921F0E29A200E75FE6 /* Build configuration list for PBXNativeTarget "HueQuickStartApp" */;
+			buildPhases = (
+				8BAD13BA1F0E354900E75FE6 /* ShellScript */,
+				8BAD136C1F0E29A200E75FE6 /* Sources */,
+				8BAD136D1F0E29A200E75FE6 /* Frameworks */,
+				8BAD136E1F0E29A200E75FE6 /* Resources */,
+				8BAD13B51F0E2BFE00E75FE6 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HueQuickStartApp;
+			productName = HueQuickStartApp;
+			productReference = 8BAD13701F0E29A200E75FE6 /* HueQuickStartApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A91B5E681F422A610004AD77 /* HueQuickStartAppSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A91B5E781F422A610004AD77 /* Build configuration list for PBXNativeTarget "HueQuickStartAppSwift" */;
+			buildPhases = (
+				A91B5E651F422A610004AD77 /* Sources */,
+				A91B5E661F422A610004AD77 /* Frameworks */,
+				A91B5E671F422A610004AD77 /* Resources */,
+				A9C03A541F423C6B00F8CEAF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HueQuickStartAppSwift;
+			productName = HueQuickStartAppSwift;
+			productReference = A91B5E691F422A610004AD77 /* HueQuickStartAppSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BAD13681F0E29A200E75FE6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Philips Lighting B.V.";
+				TargetAttributes = {
+					8BAD136F1F0E29A200E75FE6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 55Y7TQ7BJ8;
+						ProvisioningStyle = Automatic;
+					};
+					A91B5E681F422A610004AD77 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+					};
+				};
+			};
+			buildConfigurationList = 8BAD136B1F0E29A200E75FE6 /* Build configuration list for PBXProject "HueQuickStartApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8BAD13671F0E29A200E75FE6;
+			productRefGroup = 8BAD13711F0E29A200E75FE6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BAD136F1F0E29A200E75FE6 /* HueQuickStartApp */,
+				A91B5E681F422A610004AD77 /* HueQuickStartAppSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BAD136E1F0E29A200E75FE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B76A05A1F1F522D007C8FF0 /* press_smartbridge.png in Resources */,
+				8B76A0561F1F5211007C8FF0 /* PHBridgePushLinkViewController.xib in Resources */,
+				8B76A05B1F1F522D007C8FF0 /* press_smartbridge@2x.png in Resources */,
+				8B2D16EC1F1F584C0012283C /* Default-568h@2x.png in Resources */,
+				8B76A0531F1F5211007C8FF0 /* PHBridgeSelectionViewController.xib in Resources */,
+				8B566B851F210B3B000FA1E3 /* PHRootViewController.xib in Resources */,
+				8B76A0211F1CDD71007C8FF0 /* PHLightControlViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A91B5E671F422A610004AD77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9831BA01F4E1947000913E4 /* ActivityIndicatorOverlayView.xib in Resources */,
+				A968FE131F562D520028D65F /* press_smartbridge@2x.png in Resources */,
+				A91B5E761F422A610004AD77 /* LaunchScreen.storyboard in Resources */,
+				A92A555D1F57630C006A17F2 /* Main.storyboard in Resources */,
+				A968FE121F562D4E0028D65F /* press_smartbridge.png in Resources */,
+				A91B5E731F422A610004AD77 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8BAD13BA1F0E354900E75FE6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "BASE_DIR=\"${PROJECT_DIR}/Dependencies/HueSDK/phone\"\n\nrm -R \"${BASE_DIR}/active/HueSDK.framework\"\n\nif [ ${PLATFORM_NAME} = \"iphonesimulator\" ]\nthen\nln -sF \"${BASE_DIR}/simulator/HueSDK.framework\" \"${BASE_DIR}/active/HueSDK.framework\"\nelse\nln -sF \"${BASE_DIR}/device/HueSDK.framework\" \"${BASE_DIR}/active/HueSDK.framework\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BAD136C1F0E29A200E75FE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B76A0521F1F5211007C8FF0 /* PHBridgeSelectionViewController.m in Sources */,
+				8B566B841F210B3B000FA1E3 /* PHRootViewController.m in Sources */,
+				8BAD13751F0E29A200E75FE6 /* main.m in Sources */,
+				8B76A0551F1F5211007C8FF0 /* PHBridgePushLinkViewController.m in Sources */,
+				8B566B801F1FD86D000FA1E3 /* PHBridgeInfo.m in Sources */,
+				8B769FFC1F1CDC6E007C8FF0 /* PHAppDelegate.m in Sources */,
+				8B76A0511F1F5211007C8FF0 /* PHBridgeDiscoveryController.m in Sources */,
+				8B566B7D1F1FD2DD000FA1E3 /* PHSKnownBridges+LastConnectedBridge.m in Sources */,
+				8B76A0541F1F5211007C8FF0 /* PHBridgeController.m in Sources */,
+				8B76A0201F1CDD71007C8FF0 /* PHLightControlViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A91B5E651F422A610004AD77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9A1A3D31F589EBE00B6AB16 /* PHSKnownBridgeAdditions.swift in Sources */,
+				A9831B991F4E1774000913E4 /* ActivityDisplaying.swift in Sources */,
+				A92A555E1F576312006A17F2 /* PHLightControlViewController.swift in Sources */,
+				A9506B191F50FADB00DD3E39 /* NavigationHelping.swift in Sources */,
+				A9FFBF801F4E3F7D007BB5EB /* BridgeDiscoveryController.swift in Sources */,
+				A9506B1B1F50FBC600DD3E39 /* NavigableController.swift in Sources */,
+				A9831BA31F4E1A36000913E4 /* AutomaticNibLoading.swift in Sources */,
+				A9CD0EAF1F50D54500E8CE93 /* AlertPresenting.swift in Sources */,
+				A97921321F51B758003463C5 /* PHBridgeSelectionViewController.swift in Sources */,
+				A91B5E931F4234AB0004AD77 /* PHAppDelegate.swift in Sources */,
+				A9831B9D1F4E18CD000913E4 /* ActivityIndicatorOverlayView.swift in Sources */,
+				A968FE111F56151F0028D65F /* PHBridgePushLinkViewController.swift in Sources */,
+				A9FFBF811F4E42ED007BB5EB /* PHBridgeInfo.swift in Sources */,
+				A9831B9B1F4E17F5000913E4 /* ActivityStatusIndicator.swift in Sources */,
+				A91B5E8C1F422AEC0004AD77 /* PHBridgeController.swift in Sources */,
+				A9CD0EAD1F50D4B500E8CE93 /* PushLinkPresenting.swift in Sources */,
+				A9EAF1F31F54C0FB00E04C55 /* SegueCoordinator.swift in Sources */,
+				A9D4D40A1F50E3E2000EEB9C /* PHNavigationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A91B5E741F422A610004AD77 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A91B5E751F422A610004AD77 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8BAD13901F0E29A200E75FE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8BAD13911F0E29A200E75FE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BAD13931F0E29A200E75FE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 55Y7TQ7BJ8;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/HueSDK/phone/active",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/HueQuickStartApp/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.philips.lighting.hue.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8BAD13941F0E29A200E75FE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 55Y7TQ7BJ8;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/HueSDK/phone/active",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/HueQuickStartApp/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.philips.lighting.hue.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A91B5E791F422A610004AD77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/HueSDK/phone/active",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = HueQuickStartAppSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.philips.lighting.hue.demo.HueQuickStartAppSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "HueQuickStartAppSwift/HueQuickStartAppSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A91B5E7A1F422A610004AD77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/HueSDK/phone/active",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = HueQuickStartAppSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.philips.lighting.hue.demo.HueQuickStartAppSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HueQuickStartAppSwift/HueQuickStartAppSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BAD136B1F0E29A200E75FE6 /* Build configuration list for PBXProject "HueQuickStartApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BAD13901F0E29A200E75FE6 /* Debug */,
+				8BAD13911F0E29A200E75FE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BAD13921F0E29A200E75FE6 /* Build configuration list for PBXNativeTarget "HueQuickStartApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BAD13931F0E29A200E75FE6 /* Debug */,
+				8BAD13941F0E29A200E75FE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A91B5E781F422A610004AD77 /* Build configuration list for PBXNativeTarget "HueQuickStartAppSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A91B5E791F422A610004AD77 /* Debug */,
+				A91B5E7A1F422A610004AD77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BAD13681F0E29A200E75FE6 /* Project object */;
+}

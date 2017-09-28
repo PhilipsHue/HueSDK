@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zn1-OV-dEi">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PHLightViewController-->
+        <scene sceneID="lr9-CE-DAo">
+            <objects>
+                <viewController id="NJk-Uk-iCK" userLabel="PHLightViewController" customClass="PHLightControlViewController" customModule="HueQuickStartAppSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i36-Ql-Wzt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connected bridge:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHF-vV-WGP">
+                                <rect key="frame" x="20" y="84" width="151" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IP address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xde-4o-iAQ">
+                                <rect key="frame" x="20" y="126" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not connected" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5SC-fc-Vlk">
+                                <rect key="frame" x="151" y="126" width="114" height="21"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not connected" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFV-gI-9KM">
+                                <rect key="frame" x="151" y="156" width="114" height="21"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unique ID" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qel-g7-lHd" userLabel="Unique ID">
+                                <rect key="frame" x="20" y="156" width="75" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lx9-XH-NTh">
+                                <rect key="frame" x="122" y="587" width="131" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Randomize Lights">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="randomizeLightButtonAction" destination="NJk-Uk-iCK" eventType="touchUpInside" id="832-Y1-x8U"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GHF-vV-WGP" firstAttribute="leading" secondItem="B4I-A4-9El" secondAttribute="leading" constant="20" id="GY0-WC-87i"/>
+                            <constraint firstItem="B4I-A4-9El" firstAttribute="bottom" secondItem="lx9-XH-NTh" secondAttribute="bottom" constant="50" id="InX-xU-XUG"/>
+                            <constraint firstItem="wFV-gI-9KM" firstAttribute="baseline" secondItem="Qel-g7-lHd" secondAttribute="baseline" id="LTJ-bS-wEf"/>
+                            <constraint firstItem="Xde-4o-iAQ" firstAttribute="leading" secondItem="GHF-vV-WGP" secondAttribute="leading" id="Qf8-zF-VKv"/>
+                            <constraint firstItem="lx9-XH-NTh" firstAttribute="centerX" secondItem="B4I-A4-9El" secondAttribute="centerX" id="WwI-45-y2l"/>
+                            <constraint firstItem="GHF-vV-WGP" firstAttribute="top" secondItem="B4I-A4-9El" secondAttribute="top" constant="20" id="ZeX-dA-hvP"/>
+                            <constraint firstItem="5SC-fc-Vlk" firstAttribute="baseline" secondItem="Xde-4o-iAQ" secondAttribute="baseline" id="fBO-Ks-Zzx"/>
+                            <constraint firstItem="wFV-gI-9KM" firstAttribute="leading" secondItem="5SC-fc-Vlk" secondAttribute="leading" id="hAc-FP-f9U"/>
+                            <constraint firstItem="Xde-4o-iAQ" firstAttribute="top" secondItem="GHF-vV-WGP" secondAttribute="bottom" constant="20" id="i7N-0h-AM2"/>
+                            <constraint firstItem="5SC-fc-Vlk" firstAttribute="leading" secondItem="Xde-4o-iAQ" secondAttribute="trailing" constant="50" id="jyC-x1-bP9"/>
+                            <constraint firstItem="Qel-g7-lHd" firstAttribute="leading" secondItem="Xde-4o-iAQ" secondAttribute="leading" id="nji-67-Ahh"/>
+                            <constraint firstItem="Qel-g7-lHd" firstAttribute="top" secondItem="Xde-4o-iAQ" secondAttribute="top" constant="30" id="xrX-3A-YzY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="B4I-A4-9El"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jDr-W4-FiV"/>
+                    <connections>
+                        <outlet property="ipAddressLabel" destination="5SC-fc-Vlk" id="zBI-zi-WRs"/>
+                        <outlet property="uniqueIdLabel" destination="wFV-gI-9KM" id="qwS-yP-dzf"/>
+                        <segue destination="zgl-c9-cxE" kind="show" identifier="showDiscoveryResultsSegue" id="rmG-Hv-TVa"/>
+                        <segue destination="HFl-u3-sFe" kind="presentation" identifier="showPushLinkScreenSegue" id="Jmh-13-p7q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="giH-Si-2ur" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="-23.838080959520241"/>
+        </scene>
+        <!--Bridge Selection View Controller-->
+        <scene sceneID="5IF-qn-inx">
+            <objects>
+                <tableViewController id="zgl-c9-cxE" customClass="PHBridgeSelectionViewController" customModule="HueQuickStartAppSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0XK-8Y-urM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiscoveredBridgeCell" textLabel="TtI-Jp-IBm" detailTextLabel="9Qw-iw-dMn" style="IBUITableViewCellStyleSubtitle" id="HZI-2j-vt7">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HZI-2j-vt7" id="7jn-sm-Q1w">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TtI-Jp-IBm">
+                                            <rect key="frame" x="16" y="5" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9Qw-iw-dMn">
+                                            <rect key="frame" x="16" y="25.5" width="33" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="zgl-c9-cxE" id="ZVi-bn-HNI"/>
+                            <outlet property="delegate" destination="zgl-c9-cxE" id="hqx-vy-580"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="4uB-NS-rNq" kind="unwind" identifier="unwindToReloadBridges" unwindAction="unwindToReloadBridgesWithSegue:" id="dT9-7o-CJS"/>
+                        <segue destination="4uB-NS-rNq" kind="unwind" identifier="unwindToSelectBridge" unwindAction="unwindToSelectBridgeWithSegue:" id="ujN-h5-YYs"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="na8-Ib-a1K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="4uB-NS-rNq" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1431" y="-24"/>
+        </scene>
+        <!--Bridge Push Link View Controller-->
+        <scene sceneID="Xig-iP-ZkW">
+            <objects>
+                <viewController id="HFl-u3-sFe" customClass="PHBridgePushLinkViewController" customModule="HueQuickStartAppSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pow-zg-0y5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="553" image="press_smartbridge.png" translatesAutoresizingMaskIntoConstraints="NO" id="Y8m-K7-dOy">
+                                <rect key="frame" x="15" y="93" width="346" height="481"/>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dYJ-Ht-BlB">
+                                <rect key="frame" x="20" y="645" width="335" height="2"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Y8m-K7-dOy" firstAttribute="centerX" secondItem="Pow-zg-0y5" secondAttribute="centerX" id="7Aa-qc-amP"/>
+                            <constraint firstAttribute="bottom" secondItem="dYJ-Ht-BlB" secondAttribute="bottom" constant="20" symbolic="YES" id="JF4-u0-5uu"/>
+                            <constraint firstItem="Y8m-K7-dOy" firstAttribute="centerX" secondItem="dYJ-Ht-BlB" secondAttribute="centerX" id="XYc-lr-BQP"/>
+                            <constraint firstItem="Y8m-K7-dOy" firstAttribute="centerY" secondItem="Pow-zg-0y5" secondAttribute="centerY" id="ZRB-ch-hxh"/>
+                            <constraint firstItem="Y8m-K7-dOy" firstAttribute="leading" secondItem="Cos-Ok-xwj" secondAttribute="leading" constant="15" id="eMO-dL-1pl"/>
+                            <constraint firstItem="Y8m-K7-dOy" firstAttribute="top" secondItem="Cos-Ok-xwj" secondAttribute="top" constant="73" id="hPA-h9-P6X"/>
+                            <constraint firstItem="dYJ-Ht-BlB" firstAttribute="leading" secondItem="Pow-zg-0y5" secondAttribute="leadingMargin" constant="4" id="m1a-Xz-fZv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Cos-Ok-xwj"/>
+                    </view>
+                    <connections>
+                        <outlet property="progressView" destination="dYJ-Ht-BlB" id="XDF-tg-5f0"/>
+                        <segue destination="FJn-3H-D3F" kind="unwind" identifier="unwindToCancelPushLink" unwindAction="unwindToCancelPushLinkWithSegue:" id="yI5-7E-7mS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j6c-Dw-CAn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="FJn-3H-D3F" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="826"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KJf-ox-frj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zn1-OV-dEi" customClass="PHNavigationController" customModule="HueQuickStartAppSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rFM-8s-wew">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NJk-Uk-iCK" kind="relationship" relationship="rootViewController" id="oMn-HJ-s7D"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iAL-LW-ndC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-412" y="-24"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="press_smartbridge.png" width="516" height="475"/>
+    </resources>
+</document>

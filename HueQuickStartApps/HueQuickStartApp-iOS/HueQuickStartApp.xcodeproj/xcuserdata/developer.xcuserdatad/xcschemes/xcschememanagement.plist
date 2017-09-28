@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>HueQuickStartApp.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>HueQuickStartAppSwift.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>8BAD136F1F0E29A200E75FE6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8BAD13881F0E29A200E75FE6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8BAD139C1F0E29AF00E75FE6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A91B5E681F422A610004AD77</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
