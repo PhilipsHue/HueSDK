@@ -1,0 +1,39 @@
+1. To get started programming with the Hue Android SDK, download the release.  
+2. Then copy the Android/jniLibs folder to <project_root>/app/src/main/jniLibs, the .jar's to <project_root>/app/libs, and reopen your project in Android Studio.
+
+- project root
+   |- app
+       |- libs
+       |   |- huecppsdk-wrapper-javadoc.jar
+       |   \- huecppsdk-wrapper.jar
+       |- src
+           |- main
+               |- jniLibs
+                   |- arm64-v8a
+                   |   \- libhuesdk.so
+                   |- armeabi
+                   |   \- libhuesdk.so
+                   \- ...
+
+3. Load the huesdk library in your main activity class:
+
+public class MainActivity extends AppCompatActivity {
+
+    static {
+        System.loadLibrary("huesdk");
+    }
+
+    ...
+}
+
+You'll also need the INTERNET permission in your app's manifest in order to communicate with the Hue bridge.
+
+Follow the Java API Guide which explains the general principles and contains Java code examples.
+
+JavaDocs
+
+To load the javadoc in Android Studio, edit <project root>/.idea/libraries/huecppsdk_wrapper.xml and replace <JAVADOC /> with:
+
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/app/libs/huecppsdk-wrapper-javadoc.jar!/" />
+    </JAVADOC>
