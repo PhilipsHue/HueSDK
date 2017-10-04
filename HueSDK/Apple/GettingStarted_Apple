@@ -1,0 +1,44 @@
+This article explains how to add the SDK to a new or existing project
+
+Before adding the SDK to the project, we first need to unzip and move the frameworks to our project directory:
+1. Open the project directory in Finder
+2. Create the folders as shown in the image below
+3. Unzip and move the SDK frameworks to the appropriate directories
+4. Copy the framework from the simulator folder to the active folder
+
+All dependencies are in the right place, so we can add the SDK to the project:
+1. Open the project in xcode
+2. Create a 'Dependencies' group
+3. Drag and drop the framework in the active folder to the "Dependencies" group in your xcode project
+
+The next step is to make sure the framework is copied into the binary on compilation:
+1. Open the 'Build Phases' tab in the target configuration
+2. Expand the 'Embed Frameworks' section and add the framework to the list. If the 'Embed Frameworks' section doesn’t exist, create it.
+Note: Make sure 'Code Sign On Copy' is signed.
+
+Try to compile and run the project on the simulator. 
+Compilation for your device will still fail, because it links against the framework that only contains symbols for the simulator. It requires some additional configuration to the xcode project:
+1. Open the 'Build Phases' tab in the project configuration
+2. Add a new 'Run Script' phase and move it below 'Target Dependencies' phase
+3. Copy and paste the following code to the script:
+
+  BASE_DIR="${PROJECT_DIR}/Dependencies/HueSDK/phone"
+
+  rm -R "${BASE_DIR}/active/HueSDK.framework"
+
+  if [ ${PLATFORM_NAME} = "iphonesimulator" ]
+  then
+  ln -sF "${BASE_DIR}/simulator/HueSDK.framework" "${BASE_DIR}/active/HueSDK.framework"
+  else
+  ln -sF "${BASE_DIR}/device/HueSDK.framework" "${BASE_DIR}/active/HueSDK.framework"
+  fi
+
+This script removes the old framework or symlink from the active directory and creates a new symlink to the framework required for the compilation, which depends on the platform.
+
+Our current iOS builds don’t support bitcode yet, so we need to disable this in our project:
+1. Open the 'Build Settings' tab in the project configuration
+2. Search for 'Enable Bitcode' option and set it to ’No'
+
+The project should now compile fine for both simulator and device. You can use the SDK by importing the HueSDK.h file.
+Note: because a http connection is used for communication with the bridge, you have to configure the app transport security settings in the plist file.
+Have fun!
