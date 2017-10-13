@@ -24,7 +24,12 @@ Compilation for your device will still fail, because it links against the framew
 
   BASE_DIR="${PROJECT_DIR}/Dependencies/HueSDK/phone"
 
+  if [ -d "${BASE_DIR}/active/" ]
+  then
   rm -R "${BASE_DIR}/active/HueSDK.framework"
+  else
+  mkdir "${BASE_DIR}/active/"
+  fi
 
   if [ ${PLATFORM_NAME} = "iphonesimulator" ]
   then
