@@ -386,6 +386,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A91B5E781F422A610004AD77 /* Build configuration list for PBXNativeTarget "HueQuickStartAppSwift" */;
 			buildPhases = (
+				8BC7FEF91F9C7874001DBD01 /* ShellScript */,
 				A91B5E651F422A610004AD77 /* Sources */,
 				A91B5E661F422A610004AD77 /* Frameworks */,
 				A91B5E671F422A610004AD77 /* Resources */,
@@ -482,7 +483,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "BASE_DIR=\"${PROJECT_DIR}/Dependencies/HueSDK/phone\"\n\nrm -R \"${BASE_DIR}/active/HueSDK.framework\"\n\nif [ ${PLATFORM_NAME} = \"iphonesimulator\" ]\nthen\nln -sF \"${BASE_DIR}/simulator/HueSDK.framework\" \"${BASE_DIR}/active/HueSDK.framework\"\nelse\nln -sF \"${BASE_DIR}/device/HueSDK.framework\" \"${BASE_DIR}/active/HueSDK.framework\"\nfi";
+			shellScript = "BASE_DIR=\"${PROJECT_DIR}/Dependencies/HueSDK/phone\"\n\nif [ -d \"${BASE_DIR}/active/\" ]\nthen\nrm -R \"${BASE_DIR}/active/HueSDK.framework\"\nelse\nmkdir \"${BASE_DIR}/active/\"\nfi\n\nif [ ${PLATFORM_NAME} = \"iphonesimulator\" ]\nthen\nln -sF \"${BASE_DIR}/simulator/HueSDK.framework\" \"${BASE_DIR}/active/HueSDK.framework\"\nelse\nln -sF \"${BASE_DIR}/device/HueSDK.framework\" \"${BASE_DIR}/active/HueSDK.framework\"\nfi";
+		};
+		8BC7FEF91F9C7874001DBD01 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "BASE_DIR=\"${PROJECT_DIR}/Dependencies/HueSDK/phone\"\n\nif [ -d \"${BASE_DIR}/active/\" ]\nthen\nrm -R \"${BASE_DIR}/active/HueSDK.framework\"\nelse\nmkdir \"${BASE_DIR}/active/\"\nfi\n\nif [ ${PLATFORM_NAME} = \"iphonesimulator\" ]\nthen\nln -sF \"${BASE_DIR}/simulator/HueSDK.framework\" \"${BASE_DIR}/active/HueSDK.framework\"\nelse\nln -sF \"${BASE_DIR}/device/HueSDK.framework\" \"${BASE_DIR}/active/HueSDK.framework\"\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
