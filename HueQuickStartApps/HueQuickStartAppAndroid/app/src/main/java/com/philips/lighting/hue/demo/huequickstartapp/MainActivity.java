@@ -117,10 +117,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      */
     private void startBridgeDiscovery() {
         disconnectFromBridge();
-
         bridgeDiscovery = new BridgeDiscovery();
-        bridgeDiscovery.search(BridgeDiscovery.BridgeDiscoveryOption.UPNP, bridgeDiscoveryCallback);
-
+        // ALL Include [UPNP, IPSCAN, NUPNP] but in some nets UPNP and NUPNP is not working properly
+        bridgeDiscovery.search(BridgeDiscovery.BridgeDiscoveryOption.ALL, bridgeDiscoveryCallback);
         updateUI(UIState.BridgeDiscoveryRunning, "Scanning the network for hue bridges...");
     }
 
