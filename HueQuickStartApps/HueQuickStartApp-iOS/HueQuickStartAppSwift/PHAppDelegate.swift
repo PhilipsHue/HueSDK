@@ -17,7 +17,9 @@ class PHAppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func configureSDK() {
-        PHSPersistence.setStorageLocation(NSHomeDirectory(), andDeviceId: "001122334455")
+        let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+        
+        PHSPersistence.setStorageLocation(documentsPath, andDeviceId: "001122334455")
         PHSLog.setConsoleLogLevel(PHSLogLevel.debug)
     }
 
