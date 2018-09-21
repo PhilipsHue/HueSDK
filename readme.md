@@ -1,4 +1,11 @@
 # Hue SDK
+
+**This repository is deprecated. The SDK moved to another repository and includes entertainment support.**
+**New repository: https://github.com/PhilipsHue/HueSDK4EDK/**
+**For access you need to subscribe: https://developers.meethue.com/content/edk-terms-use**
+
+-----
+
 Building a Smart Home app? A well designed SDK should make your application development life easier, giving you the tools and documentation to easily add new functionality to your application. The new Hue SDK deliver just that. We designed them with cross-platform in mind, to allow you to quickly integrate key Hue functionality when you need it, used either together or separately. Hue SDK is a new set of development tools that are designed to access the Hue system through Hue bridge and control an associated set of connected lamps. The aim of the SDK is to enable you to create your own applications for Hue system.
 
 To develop for Hue you require the Philips Hue Personal Wireless Lighting System.
