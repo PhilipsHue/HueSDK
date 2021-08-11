@@ -1,10 +1,28 @@
-# Hue SDK
+# This repository is deprecated.
 
-**This repository is deprecated. The SDK moved to another repository and includes entertainment support.**
-**New repository: https://github.com/PhilipsHue/HueSDK4EDK/**
-**For access you need to subscribe: https://developers.meethue.com/content/edk-terms-use**
+**Deprecation – Philips Hue SDK**
+
+We have decided to **deprecate the hue SDK** effective **as of July 1st 2019**. This means there will be no new SDK releases except for critical updates (e.g. security) which will be maintained for one additional year. Existing Hue SDK client applications will continue to work normally but we can no longer guarantee long term compatibility with future Hue software. We strongly recommend Hue SDK users to migrate to Hue API which remains up-to-date and supported.
+
+**FAQ**
+
+**Why is this changing?** Philips Hue has decided to focus its resources into improving the Hue API and building new features. The usage of the SDK has been declining as has our own dependence on it so we feel it is more beneficial to focus on building directly on the Hue API.
+
+**Who’s Impacted?** Anyone who is leveraging the Philips Hue SDK.
+
+**Who’s Not Impacted?** Anyone who is not utilizing the Philips Hue SDK.
+
+**What should you use instead?** Philips Hue API
+
+**Next steps?** Migration code samples and best practice blogs by Hue Developer Program.
+
+**Question?** Contact us! https://developers.meethue.com/support/
+
+**See also:** https://developers.meethue.com/deprecation-philips-hue-sdk/
 
 -----
+
+# Hue SDK
 
 Building a Smart Home app? A well designed SDK should make your application development life easier, giving you the tools and documentation to easily add new functionality to your application. The new Hue SDK deliver just that. We designed them with cross-platform in mind, to allow you to quickly integrate key Hue functionality when you need it, used either together or separately. Hue SDK is a new set of development tools that are designed to access the Hue system through Hue bridge and control an associated set of connected lamps. The aim of the SDK is to enable you to create your own applications for Hue system.
 
